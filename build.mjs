@@ -39,7 +39,7 @@ for (const slug of slugs) {
     await cp(path.join(root, 'src/layouts', data.layout, a), path.join(out, a))
   }
   if (existsSync(path.join(siteDir, 'img'))) await cp(path.join(siteDir, 'img'), path.join(out, 'img'), { recursive: true })
-  await writeFile(path.join(out, 'favicon.svg'), favicon)
+  await writeFile(path.join(out, 'favicon.svg'), data.favicon || favicon)
   built.push({ slug, data })
   console.log('ok', slug, Object.keys(pages).map((r) => '/' + r).join(' '))
 }

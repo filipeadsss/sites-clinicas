@@ -25,6 +25,10 @@ export function mapsLink(data) {
 
 /** CSS com as variáveis do tema do cliente. */
 export function themeVars(t) {
+  if (t.cores) {
+    const v = Object.entries(t.cores).map(([k, c]) => `--${k}:${c}`).join(';')
+    return `:root{${v};--f-titulo:'${t.fonteTitulo}',Georgia,'Times New Roman',serif;--f-texto:'${t.fonteTexto}',system-ui,-apple-system,'Segoe UI',sans-serif}`
+  }
   return `:root{--marrom:${t.marrom};--dourado:${t.dourado};--dourado-texto:${t.douradoTexto};--bege:${t.bege};--offwhite:${t.offwhite};--branco:${t.branco};--f-titulo:'${t.fonteTitulo}',Georgia,'Times New Roman',serif;--f-texto:'${t.fonteTexto}',system-ui,-apple-system,'Segoe UI',sans-serif}`
 }
 
