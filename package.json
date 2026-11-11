@@ -1,0 +1,11 @@
+{
+  "name": "sites-clinicas-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfólio de sites de demonstração para clínicas. Gerador estático sem dependências.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node serve.mjs"
+  }
+}
