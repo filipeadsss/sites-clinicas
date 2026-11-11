@@ -274,9 +274,9 @@ ${header(data, url, cta, 'tratamentos')}
         <nav class="chips" aria-label="Áreas de atuação">${chips}</nav>
       </div>
       <div class="mosaico" aria-hidden="true">
-        <figure class="mosaico__a"><img src="${img('sala-procedimento.webp')}" alt="" loading="eager" decoding="async"></figure>
+        <figure class="mosaico__a"><img src="${img('procedimento-facial.webp')}" alt="" loading="eager" decoding="async"></figure>
         <figure class="mosaico__b" data-parallax="-0.06"><img src="${img('toalha.webp')}" alt="" loading="eager" decoding="async"></figure>
-        <figure class="mosaico__c"><img src="${img('marmore.webp')}" alt="" loading="eager" decoding="async"></figure>
+        <figure class="mosaico__c"><img src="${img('bancada.webp')}" alt="" loading="eager" decoding="async"></figure>
       </div>
     </div>
   </section>
@@ -302,10 +302,18 @@ ${footer(data, url)}
   )
 }
 
+/** Aplica o ponto focal (data.foco) nas imagens, para os recortes em arco e círculo. */
+function aplicarFoco(html, data) {
+  const foco = data.foco || {}
+  return html.replace(/<img src="([^"]+?\/img\/([^"\/]+))"(?![^>]*style=)/g, (m, src, nome) =>
+    foco[nome] ? `<img src="${src}" style="object-position:${foco[nome]}"` : m
+  )
+}
+
 export function render(data, url) {
   return {
-    '': pageHome(data, url),
-    tratamentos: pageTratamentos(data, url),
+    '': aplicarFoco(pageHome(data, url), data),
+    tratamentos: aplicarFoco(pageTratamentos(data, url), data),
   }
 }
 

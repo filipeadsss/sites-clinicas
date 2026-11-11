@@ -28,6 +28,19 @@ export default {
       'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap',
   },
 
+  // Ponto focal de cada imagem (object-position) para os recortes em arco e círculo.
+  foco: {
+    'fundadora.webp': '50% 22%',
+    'procedimento-facial.webp': '42% 40%',
+    'procedimento-corporal.webp': '42% 20%',
+    'sala.webp': '50% 55%',
+    'fachada.webp': '52% 45%',
+    'recepcao.webp': '60% 55%',
+    'ambiente-hero.webp': '24% 40%',
+    'bancada.webp': '60% 55%',
+    'toalha.webp': '40% 50%',
+  },
+
   contato: {
     // Vazio na demonstração: os botões levam à seção de contato. Preencher com DDI+DDD+número (ex.: 5531999999999).
     whatsapp: '',
@@ -81,17 +94,17 @@ export default {
         'Na Aurélia, acreditamos que cada pessoa merece um cuidado que respeite sua individualidade. Unimos conhecimento dermatológico, tecnologia e atenção aos detalhes para proporcionar uma experiência completa de cuidado com a pele.',
         'Cada pele possui características e necessidades próprias. Por isso, nossos tratamentos começam com uma avaliação individualizada, que permite identificar as abordagens mais adequadas para cada paciente.',
       ],
-      imagem: 'planta.webp',
-      imagemAlt: 'Ramo de oliveira em um copo de vidro sobre bancada de mármore claro',
-      imagem2: 'marmore.webp',
-      imagem2Alt: 'Textura de mármore claro com veios dourados',
+      imagem: 'recepcao.webp',
+      imagemAlt: 'Recepção com balcão de mármore, painel de madeira e orquídeas',
+      imagem2: 'sala.webp',
+      imagem2Alt: 'Sala de procedimentos com maca, equipamento e luz natural',
     },
     citacao: {
       texto: 'Ciência, cuidado e beleza *em equilíbrio.*',
       apoio: 'Cuidado especializado que respeita sua individualidade.',
-      imagem: 'recepcao.webp',
+      imagem: 'ambiente-hero.webp',
     },
-    faixa: ['marmore.webp', 'gel.webp', 'maca.webp', 'planta.webp', 'toalha.webp'],
+    faixa: ['marmore.webp', 'procedimento-facial.webp', 'sala.webp', 'fachada.webp', 'recepcao.webp'],
     especialidades: {
       eyebrow: 'Especialidades',
       titulo: 'Quatro áreas de cuidado, *um mesmo olhar.*',
@@ -107,7 +120,7 @@ export default {
       ],
       pilares: ['Dermatologia clínica', 'Estética avançada', 'Beleza natural e personalizada'],
       imagem: 'fundadora.webp',
-      imagemAlt: 'Dermatologista de blazer claro, sentada em consultório elegante',
+      imagemAlt: 'Dermatologista de blazer claro, sentada à mesa de mármore do consultório',
     },
     diferenciais: {
       titulo: 'O que orienta *o nosso atendimento*',
@@ -127,7 +140,9 @@ export default {
       fotos: [
         { src: 'fachada.webp', alt: 'Fachada da clínica com letreiro iluminado e vegetação', area: 'a', legenda: 'Fachada' },
         { src: 'recepcao.webp', alt: 'Recepção com balcão de mármore, painel de madeira e orquídeas', area: 'b', legenda: 'Recepção' },
-        { src: 'sala-procedimento.webp', alt: 'Sala de procedimentos com maca e equipamento dermatológico', area: 'c', legenda: 'Sala de procedimentos' },
+        { src: 'sala.webp', alt: 'Sala de procedimentos com maca e equipamento dermatológico', area: 'c', legenda: 'Sala de procedimentos' },
+        { src: 'procedimento-facial.webp', alt: 'Atendimento com equipamento dermatológico em sala de procedimentos', area: 'd', legenda: 'Atendimento' },
+        { src: 'bancada.webp', alt: 'Toalhas com monograma e produtos sobre bancada de mármore', area: 'e', legenda: 'Detalhes' },
       ],
     },
     contato: {
@@ -152,10 +167,10 @@ export default {
         titulo: 'Dermatologia clínica',
         descricao:
           'Cuidado especializado para a saúde da pele, com avaliação individualizada, investigação de alterações dermatológicas e acompanhamento de diferentes condições cutâneas.',
-        imagem: 'marmore.webp',
-        imagemAlt: 'Textura de mármore claro com veios dourados',
-        imagem2: 'gel.webp',
-        imagem2Alt: 'Textura de gel transparente com gotas',
+        imagem: 'fundadora.webp',
+        imagemAlt: 'Dermatologista em consultório, à mesa de mármore',
+        imagem2: 'bancada.webp',
+        imagem2Alt: 'Produtos e toalhas com monograma sobre bancada de mármore',
         servicos: [
           { nome: 'Tratamento de acne', texto: 'Avaliação e acompanhamento, com plano definido conforme o tipo de pele e a história de cada paciente.' },
           { nome: 'Tratamento de rosácea', texto: 'Acompanhamento de vermelhidão persistente e sensibilidade, com orientações de cuidado.' },
@@ -170,10 +185,10 @@ export default {
         titulo: 'Estética facial e injetáveis',
         descricao:
           'Procedimentos estéticos personalizados, planejados para valorizar a harmonia facial e respeitar a individualidade de cada pessoa.',
-        imagem: 'toalha.webp',
-        imagemAlt: 'Toalhas claras dobradas com monograma bordado',
-        imagem2: 'planta.webp',
-        imagem2Alt: 'Ramo de oliveira em um copo de vidro',
+        imagem: 'procedimento-facial.webp',
+        imagemAlt: 'Atendimento facial com equipamento dermatológico',
+        imagem2: 'marmore.webp',
+        imagem2Alt: 'Textura de mármore claro com veios dourados',
         servicos: [
           { nome: 'Toxina botulínica', texto: 'Procedimento injetável indicado, após avaliação, para suavizar linhas de expressão com foco em naturalidade.' },
           { nome: 'Preenchimento com ácido hialurônico', texto: 'Utilizado, quando indicado, para repor volume e definir contornos, respeitando as proporções do rosto.' },
@@ -187,10 +202,10 @@ export default {
         titulo: 'Tecnologias dermatológicas',
         descricao:
           'Recursos tecnológicos aplicados aos cuidados dermatológicos e estéticos, selecionados conforme as características da pele e a indicação profissional.',
-        imagem: 'sala-procedimento.webp',
+        imagem: 'sala.webp',
         imagemAlt: 'Sala de procedimentos com equipamento dermatológico',
-        imagem2: 'recepcao.webp',
-        imagem2Alt: 'Recepção com balcão de mármore e painel de madeira',
+        imagem2: 'procedimento-corporal.webp',
+        imagem2Alt: 'Atendimento com equipamento dermatológico',
         servicos: [
           { nome: 'Laser dermatológico', texto: 'Tecnologia aplicada a diferentes indicações, escolhida conforme o tipo de pele e a necessidade.' },
           { nome: 'Tecnologias para manchas', texto: 'Recursos indicados após avaliação para o tratamento de alterações de pigmentação.' },
@@ -204,10 +219,10 @@ export default {
         titulo: 'Tratamentos personalizados',
         descricao:
           'Cada pele possui necessidades próprias. Por isso, desenvolvemos planos de cuidado individualizados, considerando características, objetivos e possibilidades terapêuticas.',
-        imagem: 'maca.webp',
-        imagemAlt: 'Maca de atendimento com manta clara e painel de madeira',
-        imagem2: 'marmore.webp',
-        imagem2Alt: 'Textura de mármore claro',
+        imagem: 'ambiente-hero.webp',
+        imagemAlt: 'Paciente em recepção sofisticada, com luz quente',
+        imagem2: 'toalha.webp',
+        imagem2Alt: 'Toalha clara com o monograma bordado',
         servicos: [
           { nome: 'Protocolos para melasma', texto: 'Plano individual que costuma exigir acompanhamento e proteção solar contínuos.' },
           { nome: 'Planejamento de rejuvenescimento facial', texto: 'Organização das etapas e prioridades do cuidado ao longo do tempo.' },
