@@ -3,6 +3,9 @@
 export const esc = (s = '') =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 
+/** Escapa o texto e transforma *trecho* em itálico de destaque. */
+export const rich = (s = '') => esc(s).replace(/\*(.+?)\*/g, '<em>$1</em>')
+
 /** Monta caminhos a partir da base do site (ex.: /aurelia/ ou /). */
 export const makeUrl = (base) => (p = '') => base + p.replace(/^\//, '')
 

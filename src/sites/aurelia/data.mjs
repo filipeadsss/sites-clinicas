@@ -58,33 +58,49 @@ export default {
   home: {
     hero: {
       eyebrow: 'Dermatologia & Estética Avançada · Porto Alegre',
-      titulo: 'Seu cuidado merece atenção em cada detalhe.',
+      titulo: 'Seu cuidado merece atenção *em cada detalhe.*',
       subtitulo:
         'Na Aurélia, unimos dermatologia, tecnologia e atendimento humanizado para cuidar da saúde e da beleza da sua pele.',
       cta: 'Agende sua avaliação',
       ctaSecundario: 'Conheça os tratamentos',
       imagem: 'retrato.webp',
       imagemAlt: 'Retrato de uma mulher com pele natural e luminosa, em luz suave',
+      imagemApoio: 'toalha.webp',
+      imagemApoioAlt: 'Toalha clara com o monograma da clínica bordado',
       cartao: 'Ciência, cuidado e beleza em equilíbrio.',
+      destaques: [
+        { icone: 'gota', texto: 'Saúde da pele' },
+        { icone: 'brilho', texto: 'Estética facial' },
+        { icone: 'camadas', texto: 'Tecnologia e cuidado' },
+      ],
     },
     apresentacao: {
       eyebrow: 'A Aurélia',
-      titulo: 'Uma nova forma de cuidar de si.',
+      titulo: 'Uma nova forma de *cuidar de si.*',
       texto: [
         'Na Aurélia, acreditamos que cada pessoa merece um cuidado que respeite sua individualidade. Unimos conhecimento dermatológico, tecnologia e atenção aos detalhes para proporcionar uma experiência completa de cuidado com a pele.',
         'Cada pele possui características e necessidades próprias. Por isso, nossos tratamentos começam com uma avaliação individualizada, que permite identificar as abordagens mais adequadas para cada paciente.',
       ],
       imagem: 'planta.webp',
       imagemAlt: 'Ramo de oliveira em um copo de vidro sobre bancada de mármore claro',
+      imagem2: 'marmore.webp',
+      imagem2Alt: 'Textura de mármore claro com veios dourados',
     },
+    citacao: {
+      texto: 'Ciência, cuidado e beleza *em equilíbrio.*',
+      apoio: 'Cuidado especializado que respeita sua individualidade.',
+      imagem: 'recepcao.webp',
+    },
+    faixa: ['marmore.webp', 'gel.webp', 'maca.webp', 'planta.webp', 'toalha.webp'],
     especialidades: {
       eyebrow: 'Especialidades',
-      titulo: 'Quatro áreas de cuidado, um mesmo olhar.',
+      titulo: 'Quatro áreas de cuidado, *um mesmo olhar.*',
       linkTexto: 'Ver todos os tratamentos',
     },
     fundadora: {
       eyebrow: 'Conheça a fundadora',
-      titulo: 'Conhecimento e cuidado em cada escolha.',
+      titulo: 'Conhecimento e cuidado *em cada escolha.*',
+      frase: 'Cuidado especializado que respeita a sua individualidade.',
       texto: [
         'A Dra. Marina Alves é dermatologista e fundadora da Aurélia. Seu olhar integra a saúde da pele, a naturalidade e o bem-estar de cada paciente, com atendimento próximo e planejamento individualizado.',
         'Cada indicação parte de uma avaliação cuidadosa, com informação clara sobre possibilidades, limites e acompanhamento.',
@@ -94,7 +110,7 @@ export default {
       imagemAlt: 'Dermatologista de blazer claro, sentada em consultório elegante',
     },
     diferenciais: {
-      titulo: 'O que orienta o nosso atendimento',
+      titulo: 'O que orienta *o nosso atendimento*',
       itens: [
         { titulo: 'Atendimento individualizado', texto: 'Cada plano nasce da escuta e da avaliação do paciente.' },
         { titulo: 'Tecnologia dermatológica', texto: 'Recursos selecionados conforme a pele e a indicação profissional.' },
@@ -105,18 +121,18 @@ export default {
     },
     estrutura: {
       eyebrow: 'Nossa estrutura',
-      titulo: 'Ambientes pensados para o seu conforto.',
+      titulo: 'Ambientes pensados *para o seu conforto.*',
       texto: 'Recepção, consultório e salas de procedimento planejados para oferecer privacidade e tranquilidade.',
       nota: 'Imagens ilustrativas.',
       fotos: [
-        { src: 'fachada.webp', alt: 'Fachada da clínica com letreiro iluminado e vegetação', area: 'a' },
-        { src: 'recepcao.webp', alt: 'Recepção com balcão de mármore, painel de madeira e orquídeas', area: 'b' },
-        { src: 'sala-procedimento.webp', alt: 'Sala de procedimentos com maca e equipamento dermatológico', area: 'c' },
+        { src: 'fachada.webp', alt: 'Fachada da clínica com letreiro iluminado e vegetação', area: 'a', legenda: 'Fachada' },
+        { src: 'recepcao.webp', alt: 'Recepção com balcão de mármore, painel de madeira e orquídeas', area: 'b', legenda: 'Recepção' },
+        { src: 'sala-procedimento.webp', alt: 'Sala de procedimentos com maca e equipamento dermatológico', area: 'c', legenda: 'Sala de procedimentos' },
       ],
     },
     contato: {
       eyebrow: 'Contato',
-      titulo: 'Seu próximo passo começa com uma avaliação.',
+      titulo: 'Seu próximo passo começa *com uma avaliação.*',
       texto: 'Conheça a Aurélia e descubra as possibilidades de cuidado para sua pele.',
       cta: 'Fale com nossa equipe',
     },
@@ -125,7 +141,7 @@ export default {
   tratamentos: {
     hero: {
       eyebrow: 'Tratamentos',
-      titulo: 'Cuidado conduzido com conhecimento e precisão.',
+      titulo: 'Cuidado conduzido com *conhecimento e precisão.*',
       texto:
         'Conheça as áreas de atuação da Aurélia. Conteúdo informativo: toda indicação depende de avaliação médica individual.',
     },
@@ -138,6 +154,8 @@ export default {
           'Cuidado especializado para a saúde da pele, com avaliação individualizada, investigação de alterações dermatológicas e acompanhamento de diferentes condições cutâneas.',
         imagem: 'marmore.webp',
         imagemAlt: 'Textura de mármore claro com veios dourados',
+        imagem2: 'gel.webp',
+        imagem2Alt: 'Textura de gel transparente com gotas',
         servicos: [
           { nome: 'Tratamento de acne', texto: 'Avaliação e acompanhamento, com plano definido conforme o tipo de pele e a história de cada paciente.' },
           { nome: 'Tratamento de rosácea', texto: 'Acompanhamento de vermelhidão persistente e sensibilidade, com orientações de cuidado.' },
@@ -154,6 +172,8 @@ export default {
           'Procedimentos estéticos personalizados, planejados para valorizar a harmonia facial e respeitar a individualidade de cada pessoa.',
         imagem: 'toalha.webp',
         imagemAlt: 'Toalhas claras dobradas com monograma bordado',
+        imagem2: 'planta.webp',
+        imagem2Alt: 'Ramo de oliveira em um copo de vidro',
         servicos: [
           { nome: 'Toxina botulínica', texto: 'Procedimento injetável indicado, após avaliação, para suavizar linhas de expressão com foco em naturalidade.' },
           { nome: 'Preenchimento com ácido hialurônico', texto: 'Utilizado, quando indicado, para repor volume e definir contornos, respeitando as proporções do rosto.' },
@@ -169,6 +189,8 @@ export default {
           'Recursos tecnológicos aplicados aos cuidados dermatológicos e estéticos, selecionados conforme as características da pele e a indicação profissional.',
         imagem: 'sala-procedimento.webp',
         imagemAlt: 'Sala de procedimentos com equipamento dermatológico',
+        imagem2: 'recepcao.webp',
+        imagem2Alt: 'Recepção com balcão de mármore e painel de madeira',
         servicos: [
           { nome: 'Laser dermatológico', texto: 'Tecnologia aplicada a diferentes indicações, escolhida conforme o tipo de pele e a necessidade.' },
           { nome: 'Tecnologias para manchas', texto: 'Recursos indicados após avaliação para o tratamento de alterações de pigmentação.' },
@@ -184,6 +206,8 @@ export default {
           'Cada pele possui necessidades próprias. Por isso, desenvolvemos planos de cuidado individualizados, considerando características, objetivos e possibilidades terapêuticas.',
         imagem: 'maca.webp',
         imagemAlt: 'Maca de atendimento com manta clara e painel de madeira',
+        imagem2: 'marmore.webp',
+        imagem2Alt: 'Textura de mármore claro',
         servicos: [
           { nome: 'Protocolos para melasma', texto: 'Plano individual que costuma exigir acompanhamento e proteção solar contínuos.' },
           { nome: 'Planejamento de rejuvenescimento facial', texto: 'Organização das etapas e prioridades do cuidado ao longo do tempo.' },
@@ -193,7 +217,7 @@ export default {
       },
     ],
     cta: {
-      titulo: 'Cada tratamento começa com uma avaliação.',
+      titulo: 'Cada tratamento começa *com uma avaliação.*',
       texto: 'Converse com a nossa equipe e agende o seu atendimento.',
       botao: 'Agende sua avaliação',
     },
